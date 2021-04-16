@@ -18,7 +18,7 @@ jobs:
         git config --local user.name "github-actions"
         git pull
         python -m pip install --upgrade pip
-        pip install -r actions/All/requirements.txt
+        pip install -r requirements.txt
         echo "done"
     - name: Run GCMD Count script
       run: |
