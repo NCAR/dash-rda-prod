@@ -24,7 +24,7 @@ jobs:
         echo "done"
     - name: Run GCMD Count script
       run: |
-        cd EOL-Datasets
+        cd RDA-Datasets
         python3 gcmd.py
     - name: Commit files
       id: commit
