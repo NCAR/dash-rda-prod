@@ -18,7 +18,9 @@ jobs:
         git config --local user.name "github-actions"
         git pull
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        pip install pandas
+        pip install matplotlib
+        pip install xmltodict
         echo "done"
     - name: Run GCMD Count script
       run: |
