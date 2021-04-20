@@ -14,6 +14,10 @@ https://service.ncddc.noaa.gov/rdn/www/metadata-standards/documents/MD-Metadata.
 
 ## RDA Completeness Graph
 
+![GCMD Keywords](https://github.com/NCAR/dash-rda-prod/blob/4e661e453ff52b195b94a19a3e99506f004f4467/RDA-Datasets/rda_gcmd.txt)
+
+![GCMD Level Counts](https://github.com/NCAR/dash-rda-prod/blob/4e661e453ff52b195b94a19a3e99506f004f4467/RDA-Datasets/rda_gcmd.txt)
+
 ![RDA Completeness Graphx2](https://github.com/NCAR/dash-eol-prod/blob/master/actions/RDA/barcharts/rda.png)
 
 ## Publisher Information
