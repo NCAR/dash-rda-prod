@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd">
   <gmd:fileIdentifier>
-    <gco:CharacterString>edu.ucar.rda::d010054</gco:CharacterString>
+    <gco:CharacterString>edu.ucar.rda::d010091</gco:CharacterString>
   </gmd:fileIdentifier>
   <gmd:language>
     <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="eng; USA">eng; USA</gmd:LanguageCode>
@@ -87,21 +87,21 @@
     <gco:CharacterString>ISO19115:2003/Cor 1 2006</gco:CharacterString>
   </gmd:metadataStandardVersion>
   <gmd:dataSetURI>
-    <gco:CharacterString>https://rda.ucar.edu/datasets/d010054/</gco:CharacterString>
+    <gco:CharacterString>https://rda.ucar.edu/datasets/d010091/</gco:CharacterString>
   </gmd:dataSetURI>
   <gmd:identificationInfo>
     <gmd:MD_DataIdentification>
       <gmd:citation>
         <gmd:CI_Citation>
           <gmd:title>
-            <gco:CharacterString>En-GARD Downscaled Climate Data over the Colorado River Basin</gco:CharacterString>
+            <gco:CharacterString>ICAR Downscaled Climate Data over the Western United States</gco:CharacterString>
           </gmd:title>
           <gmd:alternateTitle>
-            <gco:CharacterString>d010054</gco:CharacterString>
+            <gco:CharacterString>d010091</gco:CharacterString>
           </gmd:alternateTitle>
           <gmd:date>
             <gmd:CI_Date>
-              <gmd:date><gco:Date>2024-11-16</gco:Date></gmd:date>
+              <gmd:date><gco:Date>2024-11-17</gco:Date></gmd:date>
               <gmd:dateType>
                 <gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
               </gmd:dateType>
@@ -129,6 +129,36 @@
           </gmd:citedResponsibleParty>
           <gmd:citedResponsibleParty>
             <gmd:CI_ResponsibleParty>
+              <gmd:individualName>
+                <gco:CharacterString>Kruyt, Bert</gco:CharacterString>
+              </gmd:individualName>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="author">author</gmd:CI_RoleCode>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:citedResponsibleParty>
+          <gmd:citedResponsibleParty>
+            <gmd:CI_ResponsibleParty>
+              <gmd:individualName>
+                <gco:CharacterString>Eidhammer, Trude</gco:CharacterString>
+              </gmd:individualName>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="author">author</gmd:CI_RoleCode>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:citedResponsibleParty>
+          <gmd:citedResponsibleParty>
+            <gmd:CI_ResponsibleParty>
+              <gmd:individualName>
+                <gco:CharacterString>McCrary, Rachel</gco:CharacterString>
+              </gmd:individualName>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="author">author</gmd:CI_RoleCode>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:citedResponsibleParty>
+          <gmd:citedResponsibleParty>
+            <gmd:CI_ResponsibleParty>
               <gmd:organisationName><gco:CharacterString>Research Data Archive at the National Center for Atmospheric Research, Computational and Information Systems Laboratory</gco:CharacterString></gmd:organisationName>
               <gmd:role>
                 <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="publisher">publisher</gmd:CI_RoleCode>
@@ -138,7 +168,7 @@
         </gmd:CI_Citation>
       </gmd:citation>
       <gmd:abstract>
-        <gco:CharacterString>Daily precipitation and temperature data from 18 Global Climate Models (GCM) in the Fifth Phase of the Coupled Model Intercomparison Project (CMIP5) that were downscaled using an analog regression approach in En-GARD (Gutmann et al. 2022) over the Colorado River Basin from 1950-2099. En-GARD is a statistical downscaling method designed to use information about upper level atmospheric processes (e.g. 500 mb winds) in addition to processes observed at the surface (e.g. precipitation and temperature). Each GCM was downscaled using training data from ERA-Interim reanalysis (Dee et al. 2011) and observations from the Livneh meteorological dataset (Livneh et al. 2015). Daily GCM precipitation and temperature were downscaled independently for each monthly basis (+/- 15 days for training) and on a grid-cell by grid cell basis. The GCM and ERA-Interim data were bilinearly interpolated to the Livneh 1/16 degree grid for input. Input data (Precipitation/Temperature, 500 mb zonal and meridional wind speeds) were quantile mapped to the corresponding ERA-Interim data and the closest 200 analog days, or days in which the input data matched the large-scale surface and upper atmospheric features, were selected independently for each day to be downscaled and used to train a multivariate linear regression to predict the Livneh data from those analog days. For precipitation, occurrence is modeled separately from magnitude by using a logistic regression with the same analog days to predict the probability of precipitation. To preserve realistic spatiotemporal variability, the residual term from the regression model is saved, and this residual is used to condition a stochastic sampling of the probability distribution for the prediction. Each output variable from En-GARD was quantile mapped to the Livneh meteorological data on a monthly basis to be used as input for a hydrological model that was calibrated using the Livneh meteorological data. More description of the En-GARD methodology can be found in Gutmann et al. (2022).</gco:CharacterString>
+        <gco:CharacterString>This dataset contains quasi-dynamically downscaled climate data from 8 global climate models from the CMIP5 archive. The data were downscaled using the Intermediate Complexity Atmospheric Research (ICAR Gutmann et al., 2016) model after bias correcting the GCM three dimensional atmospheric data to match the ERA-interim reanalysis climatology (Dee et al., 2011). ICAR was configured with the Thompson microphysics, a simple PBL parameterization based on YSU, the RRTMG longwave radiation and an empirical shortwave radiation scheme, the Noah-MP land surface model, the WRF-Lake model, the BMJ cumulus parameterization, and used linear mountain wave theory for upper level wind structures combined with an iterative scheme to remove vertical motion at the model top. The output from ICAR was adjusted to match the climatological statistics of the Livneh et al. (2015) observational dataset.</gco:CharacterString>
       </gmd:abstract>
       <gmd:status>
         <gmd:MD_ProgressCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ProgressCode" codeListValue="completed">completed</gmd:MD_ProgressCode>
@@ -302,10 +332,10 @@
       <gmd:descriptiveKeywords>
         <gmd:MD_Keywords>
           <gmd:keyword>
-            <gco:CharacterString>EARTH SCIENCE > ATMOSPHERE > PRECIPITATION > PRECIPITATION AMOUNT > 24 HOUR PRECIPITATION AMOUNT</gco:CharacterString>
+            <gco:CharacterString>EARTH SCIENCE > ATMOSPHERE > ATMOSPHERIC TEMPERATURE > SURFACE TEMPERATURE > MAXIMUM/MINIMUM TEMPERATURE</gco:CharacterString>
           </gmd:keyword>
           <gmd:keyword>
-            <gco:CharacterString>EARTH SCIENCE > ATMOSPHERE > ATMOSPHERIC TEMPERATURE > SURFACE TEMPERATURE > MAXIMUM/MINIMUM TEMPERATURE</gco:CharacterString>
+            <gco:CharacterString>EARTH SCIENCE > ATMOSPHERE > PRECIPITATION > PRECIPITATION AMOUNT > 24 HOUR PRECIPITATION AMOUNT</gco:CharacterString>
           </gmd:keyword>
           <gmd:thesaurusName>
             <gmd:CI_Citation>
@@ -369,7 +399,7 @@
           <gmd:temporalElement>
             <gmd:EX_TemporalExtent>
               <gmd:extent>
-                <gml:TimePeriod gml:id="d010054_time_period">
+                <gml:TimePeriod gml:id="d010091_time_period">
                   <gml:beginPosition>1950</gml:beginPosition>
                   <gml:endPosition>2099</gml:endPosition>
                 </gml:TimePeriod>
@@ -435,7 +465,7 @@
           <gmd:onLine>
             <gmd:CI_OnlineResource>
               <gmd:linkage>
-                <gmd:URL>https://rda.ucar.edu/datasets/d010054/</gmd:URL>
+                <gmd:URL>https://rda.ucar.edu/datasets/d010091/</gmd:URL>
               </gmd:linkage>
               <gmd:protocol>
                 <gco:CharacterString>https</gco:CharacterString>
@@ -457,7 +487,7 @@
           <gmd:onLine>
             <gmd:CI_OnlineResource>
               <gmd:linkage>
-                <gmd:URL>https://rda.ucar.edu/datasets/d010054/dataaccess/</gmd:URL>
+                <gmd:URL>https://rda.ucar.edu/datasets/d010091/dataaccess/</gmd:URL>
               </gmd:linkage>
               <gmd:protocol>
                 <gco:CharacterString>https</gco:CharacterString>
