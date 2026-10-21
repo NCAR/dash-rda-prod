@@ -14,7 +14,7 @@ https://www.ncei.noaa.gov/sites/default/files/2020-04/ISO%2019115-2%20Workbook_P
 
 ## RDA Completeness Graph
 
-![RDA Completeness Graphx2](https://github.com/NCAR/dash-eol-prod/blob/master/actions/All/barcharts/rda.png)
+![RDA Completeness Graphx2](https://github.com/NCAR/dash-eol-prod/blob/main/actions/All/barcharts/rda.png)
 
 ## Publisher Information
 
